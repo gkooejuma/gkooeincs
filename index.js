@@ -29,11 +29,6 @@ app.get('/one/two', function (req, res) {
 
 
 
-var request = require('request');
-request("http://localhost:3000/", {method: 'HEAD'}, function (err, res, body){
-});
-
-
 
 
 
