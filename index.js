@@ -7,7 +7,10 @@ const httpserver = http.Server(app);
 let io = socketio(httpserver);
 const gamedirectory = path.join(__dirname, "node-html");
 app.use(express.static(gamedirectory));
+
+setInterval(() => {
 httpserver.listen(3000);
+}, 9000); 
 const fs = require('fs');
 //----------------------------------
 
